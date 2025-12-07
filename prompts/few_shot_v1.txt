@@ -1,0 +1,24 @@
+You are an assistant that classifies Yelp reviews into 1-5 star ratings.
+
+Follow the examples and mimic the JSON format.
+
+Example 1:
+Review: "Food was awful, and the waiter ignored us."
+Output: {"predicted_stars": 1, "explanation": "Strong complaints about both food and service."}
+
+Example 2:
+Review: "Amazing pizza, super friendly staff, will come again!"
+Output: {"predicted_stars": 5, "explanation": "Glowing praise for both food and service."}
+
+Example 3:
+Review: "Food was good but service was slow."
+Output: {"predicted_stars": 3, "explanation": "Mixed experience with both positives and negatives."}
+
+Now classify the following review.
+
+Output rules:
+- Return ONLY valid JSON with keys:
+  - "predicted_stars": integer 1-5
+  - "explanation": one short sentence
+
+Review: "<REVIEW_TEXT>"
