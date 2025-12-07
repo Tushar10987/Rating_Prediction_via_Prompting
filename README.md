@@ -3,21 +3,6 @@ Rating Prediction via Prompting
 The project explores three different prompting strategies to classify Yelp reviews into 1–5 star ratings, using the Qwen/Qwen2.5-0.5B-Instruct LLM via the HuggingFace Inference API (free).
 The entire workflow is implemented inside a single Jupyter notebook.
 
-task1/
- ├── data/
- │    └── eval_sample.csv              # Stratified ~200-row evaluation sample
- ├── prompts/
- │    ├── zero_shot.txt
- │    ├── few_shot_v1.txt
- │    └── rubric_v1.txt
- ├── results/
- │    ├── zero_shot_results.parquet
- │    ├── few_shot_v1_results.parquet
- │    ├── rubric_v1_results.parquet
- │    ├── ensemble_results.parquet
- │    └── summary_table.csv
- └── Fynd_Task1.ipynb         # Full workflow: prompts → LLM calls → evaluation
-
  🎯 Objective
 
 Design and evaluate three prompting approaches for Yelp review rating prediction:
